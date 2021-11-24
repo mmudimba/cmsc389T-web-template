@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 services:
   nodejs:
@@ -34,7 +34,7 @@ volumes:
     driver_opts:
       type: none
       #fill out your absolute path to your folder here
-      device: /home/markmark8183/cmsc389T-fall21/cmsc389T-web-template
+      device: \\wsl\Ubuntu\home\markmark8183\cmsc389T-fall21\cmsc389T-web-template
       o: bind
 
 networks:
