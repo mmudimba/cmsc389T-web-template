@@ -10,11 +10,13 @@ jobs:
       - name: testing
         uses: appleboy/ssh-action@master
         with:
-          host: terpconnect.umd.edu 
-          username: mmudimba
-          password: Markmark8183
-          port: 22
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
           script: |
-              cd ../pub    
+              cd ../pub
               cd cmsc389T-web-template
               git pull
+              
+              
