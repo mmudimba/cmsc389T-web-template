@@ -18,3 +18,5 @@ jobs:
               cd ../pub
               cd cmsc389T-web-template
               git pull
+              
+              
