@@ -9,7 +9,7 @@ jobs:
       - name: testing
         uses: appleboy/ssh-action@master
         with:
-          host: terpconnect@umd.edu
+          host: terpconnect.umd.edu
           username: mmudimba
           password: Markmark8183
           port:  22
