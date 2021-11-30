@@ -9,10 +9,10 @@ jobs:
       - name: testing
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }} 
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          port:  ${{ secrets.PORT }}
+          host: terpconnect@umd.edu
+          username: mmudimba
+          password: Markmark8183
+          port:  22
           script: |
               ssh-keyscan -H github.com > ~/.ssh/known_hosts
               cd ../pub
